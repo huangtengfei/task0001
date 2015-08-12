@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+/*
+index.html
+*/
+
 /*头部*/
 header {
 	position: relative;
@@ -222,8 +226,13 @@ footer {
 	margin: 0 70px;
 }
 
-.hotlink dt, .hotlink dd {
+.hotlink a {
 	color: #fff;
+	text-decoration: none;
+}
+
+.hotlink a:hover{
+	text-decoration: underline;
 }
 
 .hotlink dt {
@@ -242,4 +251,168 @@ footer {
 
 .copy-right p {
 	margin-bottom: 15px;
+}
+
+
+/*
+blog.html
+*/
+
+.blog .main {
+	height: 1350px;
+}
+
+.blog .main-wrapper {
+	position: relative;
+	height: 1200px;
+	padding-top: 20px;
+}
+
+/*main左侧*/
+.blog .left {
+	position: absolute;
+	width: 710px;
+	height: 1138px;
+}
+
+.article-list {
+	width: 710px;
+	height: 100%;
+}
+/*文章*/
+.article {
+	position: relative;
+	width: 680px;
+	height: 329px;
+	margin-bottom: 10px;
+	padding: 20px 15px;
+	background-color: #fff;
+}
+
+.article h4 {
+	font-size: 16px;
+	color: #a660b7;
+}
+
+.article h5 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 1.8;
+	color: #666;
+}
+
+.article p {
+	font-size: 12px;
+	line-height: 1.8;
+	text-indent: 2em;
+}
+
+.article-info {
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+}
+
+.article-info span {
+	font-size: 12px;
+	color: #999;
+}
+
+.article-date, .article-tag {
+	position: absolute;
+	left: -50px;
+	width: 50px;
+	height: 40px;
+	text-align: center;
+}
+
+.article-date {
+	top: 20px;
+	background-color: #522a5c;
+}
+
+.article-tag {
+	top: 60px;
+	background-color: #a660b7;
+}
+
+.article-date span, .article-tag span {
+	color: #fff;
+	line-height: 40px;
+}
+
+.pagination {
+	width: 582px;
+	height: 36px;
+	margin: 10px auto 0;
+}
+
+.pagination li {
+	list-style-type: none;
+	float: left;
+	font-size: 12px;
+	height: 36px;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.pagination li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.l-pager {
+	width: 70px;
+	background-color: #fff;
+}
+
+.m-pager {
+	width: 52px;
+	background-color: #fff;
+}
+
+.s-pager {
+	width: 40px;
+	background-color: #fff;
+}
+
+.selected {
+	background-color: #a660b7;
+	color: #000;
+}
+
+.disabled a {
+	color: #999 !important;
+}
+
+.blog .right {
+	margin-left: 720px;
+	width: 260px;
+	height: 100%;	
+}
+
+.blog .search, .blog .categories, .blog .calendar, .blog .tags {
+	background-color: #fff;
+}
+
+.blog .search {
+	height: 80px;	
+}
+
+.blog .categories {
+	height: 200px;
+	margin-top: 10px;
+}
+
+.blog .calendar {
+	height: 240px;
+	margin-top: 10px;
+}
+
+.blog .tags {
+	height: 200px;
+	margin-top: 10px;
 }
