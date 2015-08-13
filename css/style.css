@@ -379,9 +379,12 @@ blog.html
 	background-color: #fff;
 }
 
-.selected {
+.page-selected {
 	background-color: #a660b7;
-	color: #000;
+}
+
+.page-selected a {
+	color: #fff !important;
 }
 
 .disabled a {
@@ -399,7 +402,84 @@ blog.html
 }
 
 .blog .search {
-	height: 80px;	
+	height: 40px;
+	width: 220px;
+	padding: 20px;	
+	text-align: center;
+}
+
+.search-box {
+	width: 220px;
+	height: 40px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+/* Search */
+
+div.icon {
+	float: left;
+    height: 26px;
+    width: 26px;
+    position: relative;
+    margin: 7px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.search-icon {
+    height: 22px;
+    width: 22px;
+    background: transparent;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 1px solid #ddd;
+}
+
+.search-icon:after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #ddd;
+    position: absolute;
+    top: 18px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 24px;
+}
+
+.search-input {
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+	height: 38px;
+	width: 110px;
+	border: none;
+}
+
+.search-input:focus {
+	outline: none;
+}
+
+.search-btn {
+	margin-left: 10px;
+	width: 50px;
+	height: 40px;
+	border: none;
+	background-color: #ddd;
+	font: 20px "Century Gothic";
+	line-height: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.search-btn:hover, .search-btn:focus {
+	outline: none;
+	background-color: #ccc;
 }
 
 .blog .categories {
@@ -407,12 +487,124 @@ blog.html
 	margin-top: 10px;
 }
 
+.categories ul {
+	list-style-type: none;
+}
+
+.categories ul li {
+	height: 49px;
+	line-height: 49px;
+	border-bottom: 1px solid #ddd;
+	border-left: 4px solid #dfc6e6;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.categories ul li a {
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+}
+
+.categories ul li:hover, .categories ul li:active {
+	border-left: 4px solid #522a5c;
+}
+
 .blog .calendar {
-	height: 240px;
+	width: 214px;
+	height: 200px;
+	margin-top: 10px;
+	padding: 20px 23px;
+	text-align: center;
+}
+
+.calendar-head {
+	font-size: 14px;
+	color: #773a86;
+	font-weight: 900;
+}
+
+.calendar-head .month {
+	display: inline-block;
+	width: 150px;
+}
+
+.calendar table {
+	border-collapse: collapse;
 	margin-top: 10px;
 }
 
+.calendar tr {
+	height: 28px;
+	border-bottom: 1px solid #eee;
+}
+
+.calendar th, .calendar td {
+	font-size: 12px;
+	width: 30px;
+	color: #999;
+}
+
+.calendar th {
+	font-weight: 100;
+}
+
+.calendar .hasBlog {
+	color: #773a86;
+	font-weight: 900;
+}
+
+.calendar .selected {
+	background-color: #773a86;
+	color: #fff;
+}
+
 .blog .tags {
-	height: 200px;
+	height: 170px;
+	width: 230px;
+	padding: 15px;
 	margin-top: 10px;
+}
+
+.tags h5{
+	font-size: 15px;
+	font-weight: 100;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.tags span {
+	color: #773a86;
+}
+
+.tags .xxl {
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.tags .xl {
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.tags .l{
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.tags .m {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.tags .s {
+	font-size: 16px;
+}
+
+.tags .xs {
+	font-size: 14px;
+}
+
+.tags .xxs {
+	font-size: 12px;
 }
