@@ -342,6 +342,7 @@ blog.html
 	line-height: 40px;
 }
 
+/*pagination*/
 .pagination {
 	width: 582px;
 	height: 36px;
@@ -482,6 +483,7 @@ div.icon {
 	background-color: #ccc;
 }
 
+/*categories*/
 .blog .categories {
 	height: 200px;
 	margin-top: 10px;
@@ -510,6 +512,7 @@ div.icon {
 	border-left: 4px solid #522a5c;
 }
 
+/*calendar*/
 .blog .calendar {
 	width: 214px;
 	height: 200px;
@@ -559,6 +562,7 @@ div.icon {
 	color: #fff;
 }
 
+/*tags*/
 .blog .tags {
 	height: 170px;
 	width: 230px;
@@ -607,4 +611,159 @@ div.icon {
 
 .tags .xxs {
 	font-size: 12px;
+}
+
+/*
+gallery.html
+*/
+
+.gallery .main {
+	height: 1350px;
+}
+
+.gallery .main-wrapper {
+	position: relative;
+	height: 1200px;
+	padding-top: 20px;
+}
+
+/*main左侧*/
+.gallery .left {
+	position: absolute;
+	width: 710px;
+	height: 1138px;
+}
+
+.gallery .right {
+	margin-left: 720px;
+	width: 260px;
+	height: 100%;	
+	background-color: #fff;
+}
+
+.gallery .tabs {
+	list-style-type: none;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.tabs li {
+	float: left;
+	background-color: #fff;
+	border-right: 1px solid #eee;
+}
+
+.tabs label {
+	display: block;
+	height: 11px;
+	line-height: 11px;
+	padding: 15px 20px 20px;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.tab-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 51px;
+	width: 670px;
+	height: 640px;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.tabs input[type="radio"] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.tab-all label {
+	border-top: 4px solid #dcd9dd;
+}
+
+.tab-js label {
+	border-top: 4px solid #dfc6e6;
+}
+
+.tab-ui label {
+	border-top: 4px solid #d2a6ff;
+}
+
+.tab-fw label {
+	border-top: 4px solid #ffa98c;
+}
+
+.tab-app label {
+	border-top: 4px solid #ffe188;
+}
+
+.tabs [id^="tab"]:checked + label {
+	border-bottom: none;
+	height: 12px !important;
+}
+
+#tab1:checked + label {
+	border-top-color: #522a5c;
+}
+
+#tab2:checked + label {
+	border-top-color: #522a5c;
+}
+
+#tab3:checked + label {
+	border-top-color: #5900b2;
+}
+
+#tab4:checked + label {
+	border-top-color: #8c2300;
+}
+
+#tab5:checked + label {
+	border-top-color: #d9a300;
+}
+
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+.tab-content img {
+	display: block;
+}
+
+.tab-content span {
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #fff;
+	border-radius: 13px;
+	text-align: center;
+	color: #fff;
+}
+
+.box-xxl {
+	width: 330px;
+	height: 220px;
+}
+
+.box-xxl>div {
+	height: 70px;
+	background-color: #522a5c;
+}
+
+.box-xxl h4 {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.box-xxl p {
+	margin-left: 65px;
+	font-size: 12px;
+	color: #fff;
 }
