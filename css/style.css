@@ -663,17 +663,6 @@ gallery.html
 	font-size: 14px;
 }
 
-.tab-content {
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 51px;
-	width: 670px;
-	height: 640px;
-	background-color: #fff;
-	padding: 20px;
-}
-
 .tabs input[type="radio"] {
 	position: absolute;
 	top: -9999px;
@@ -729,20 +718,44 @@ gallery.html
   display: block;
 }
 
+.tab-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 51px;
+	width: 680px;
+	height: 640px;
+	background-color: #fff;
+	padding: 20px 15px;
+}
+
 .tab-content img {
 	display: block;
 }
 
 .tab-content span {
-	margin-top: 10px;
-	margin-left: 20px;
 	display: inline-block;
 	width: 25px;
 	height: 25px;
 	border: 1px solid #fff;
 	border-radius: 13px;
 	text-align: center;
+	font-size: 20px;
 	color: #fff;
+}
+
+.tab-content>div {
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tab-content>div>div {
+	padding: 15px;
+}
+
+.tab-content p {
+	line-height: 1.8;
 }
 
 .box-xxl {
@@ -751,19 +764,66 @@ gallery.html
 }
 
 .box-xxl>div {
+	position: relative;
 	height: 70px;
 	background-color: #522a5c;
 }
 
-.box-xxl h4 {
+.box-xxl h4, .box-xxs h4, .box-xs h4 {
+	position: absolute;
+	left: 55px;
 	display: inline-block;
-	margin-left: 10px;
 	font-size: 14px;
 	color: #fff;
 }
 
-.box-xxl p {
-	margin-left: 65px;
+.box-xxl p, .box-xxs p, .box-xs p {
+	margin-left: 40px;
 	font-size: 12px;
 	color: #fff;
+}
+
+.box-xxs {
+	width: 160px;
+	height: 185px;
+}
+
+.box-xxs>div {
+	position: relative;
+	height: 55px;
+	background-color: #5900b2;
+}
+
+.box-xs {
+	width: 160px;
+	height: 205px;
+}
+
+.box-xs>div {
+	position: relative;
+	height: 75px;
+	background-color: #d9a300;
+}
+
+.fir-col {
+	position: absolute;
+	top: 280px;
+}
+
+.sec-col {
+	position: absolute;
+	top: 280px;
+	left: 185px;
+}
+
+.sec-col>div {
+	background-color: #8c2300;
+}
+
+.third-col {
+	margin-top: -10px;
+}
+
+.third-col>div {
+	background-color: #522a5c;
 }
