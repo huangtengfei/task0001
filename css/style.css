@@ -50,10 +50,18 @@ header {
 	text-decoration: none;
 }
 
-.github {
-	position: absolute;
-	right: 10px;
-	bottom: 0;
+@media screen and (min-width: 980px) {
+	.github {
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 979px) {
+	.github {
+		display: none;
+	}
 }
 
 /*banner*/
